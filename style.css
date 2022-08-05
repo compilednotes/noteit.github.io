@@ -1,0 +1,496 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.header{
+    background-color: white;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header p{
+    margin-left: 15px;
+    font-size: small;
+}
+.header a{
+    text-decoration: none;
+    color: deeppink;
+    font-size: small;
+    background: linear-gradient(to bottom right, transparent, transparent);
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 2px solid deeppink;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.header a:hover{
+    transition: 0.5s;
+    color: white;
+    background: linear-gradient(to bottom right, deeppink, orange);
+    border: 2px solid deeppink;
+}
+/* ---------------------------done with header---------- */
+#top{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#top p{
+    color: rgba(0, 42, 42, 0.9);
+    margin-left: 20px;
+    width: 50%;
+    letter-spacing: auto;
+}
+#top .title{
+    font-size: 7rem;
+    /* background-color: aquamarine; */
+}
+#top .contact{
+    font-size: x-small;
+}
+/* ----------------------- done with top ------------- */
+#notes{
+    background-color: rgba(0, 8, 8, 0.9);
+    /* background-color: tomato; */
+    padding: 1% 0%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+#notes p{
+    font-size: 2rem;
+    animation-name: colorchange ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+@keyframes colorchange{
+    0%{color: rgb(136, 37, 207);}
+    10%{ color: mediumorchid;}
+    20%{ color: mediumslateblue;}
+    30%{ color: fuchsia;}
+    40%{ color: mediumvioletred;}
+    50%{ color: crimson; }
+    60%{ color:  mediumvioletred;}
+    70%{ color: fuchsia;}
+    80%{ color: mediumslateblue;}
+    90%{ color: mediumorchid;}
+    100%{ color: mediumpurple;}
+}
+/* --------------- done with notes----- */
+#blogs{
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 8, 8, 0.9);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+#blogs .blogz{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    height: 40%;
+    width: 35%;
+    padding-left: 1%;
+    border: 1px solid rgba(0, 8, 8, 0);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+}
+#blogs .blogz .headline{
+    font-size: 1.5rem;
+    color: white;
+}
+#blogs .blogz .para{
+    color: grey;
+    font-size: small;
+}
+#blogs .blogz .t{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+#blogs .blogz .b{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+#blogs .blogz:hover .t{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transition: all 0.5s ease-in-out;
+}
+#blogs .blogz:hover .b{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.5s ease-in-out;
+}
+/* --------------- done with blogs --------------------- */
+.footer{
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 1%;
+}
+.footer p{
+    color: grey;
+}
+.footer .dex{
+    font-size: x-small;
+}
+
+
+/* --------------------- SCREEN 01 ---------------------------------------- */
+@media only screen and (min-width: 426px) and (max-width: 1024px){
+
+    *{
+        margin: 0 0;
+        padding: 0 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .header{
+        background-color: white;
+        height: 6vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header p{
+        margin-left: 15px;
+        font-size: small;
+    }
+    .header a{
+        text-decoration: none;
+        color: deeppink;
+        font-size: small;
+        background: linear-gradient(to bottom right, transparent, transparent);
+        margin-right: 15px;
+        padding: 5px 10px;
+        border: 2px solid deeppink;
+        border-radius: 100px;
+        transition: 0.5s;
+    }
+    .header a:hover{
+        transition: 0.5s;
+        color: white;
+        background: linear-gradient(to bottom right, deeppink, orange);
+        border: 2px solid deeppink;
+    }
+    /* ---------------------------done with header---------- */
+    #top{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #top p{
+        color: rgba(0, 42, 42, 0.9);
+        margin-left: 20px;
+        width: 80%;
+        letter-spacing: auto;
+    }
+    #top .title{
+        font-size: 5rem;
+        /* background-color: aquamarine; */
+    }
+    #top .contact{
+        font-size: x-small;
+    }
+    /* ----------------------- done with top ------------- */
+    #notes{
+        background-color: rgba(0, 8, 8, 0.9);
+        /* background-color: tomato; */
+        padding: 1% 0%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #notes p{
+        font-size: 2rem;
+        animation-name: colorchange ;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: ease-in-out;
+    }
+    @keyframes colorchange{
+        0%{color: rgb(136, 37, 207);}
+        10%{ color: mediumorchid;}
+        20%{ color: mediumslateblue;}
+        30%{ color: fuchsia;}
+        40%{ color: mediumvioletred;}
+        50%{ color: crimson; }
+        60%{ color:  mediumvioletred;}
+        70%{ color: fuchsia;}
+        80%{ color: mediumslateblue;}
+        90%{ color: mediumorchid;}
+        100%{ color: mediumpurple;}
+    }
+    /* --------------- done with notes----- */
+    #blogs{
+        height: 80vh;
+        width: 100%;
+        background-color: rgba(0, 8, 8, 0.9);
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    #blogs .blogz{
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        margin: auto;
+        height: 40%;
+        width: 80%;
+        padding-left: 5%;
+        border: 1px solid rgba(0, 8, 8, 0);
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #blogs .blogz .headline{
+        font-size: 1.5rem;
+        color: white;
+    }
+    #blogs .blogz .para{
+        color: grey;
+        font-size: small;
+    }
+    #blogs .blogz .t{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+    #blogs .blogz .b{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+    }
+    #blogs .blogz:hover .t{
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        transition: all 0.5s ease-in-out;
+    }
+    #blogs .blogz:hover .b{
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: all 0.5s ease-in-out;
+    }
+    /* --------------- done with blogs --------------------- */
+    .footer{
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1% 1%;
+    }
+    .footer p{
+        color: grey;
+    }
+    .footer .dex{
+        font-size: x-small;
+    }
+    
+
+
+}
+
+
+
+@media only screen and (min-width: 10px) and (max-width: 425px){
+
+    *{
+        margin: 0 0;
+        padding: 0 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .header{
+        background-color: white;
+        height: 6vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header p{
+        margin-left: 15px;
+        font-size: small;
+    }
+    .header a{
+        text-decoration: none;
+        color: deeppink;
+        font-size: small;
+        background: linear-gradient(to bottom right, transparent, transparent);
+        margin-right: 15px;
+        padding: 5px 10px;
+        border: 2px solid deeppink;
+        border-radius: 100px;
+        transition: 0.5s;
+    }
+    .header a:hover{
+        transition: 0.5s;
+        color: white;
+        background: linear-gradient(to bottom right, deeppink, orange);
+        border: 2px solid deeppink;
+    }
+    /* ---------------------------done with header---------- */
+    #top{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #top p{
+        color: rgba(0, 42, 42, 0.9);
+        margin-left: 20px;
+        width: 80%;
+        letter-spacing: auto;
+    }
+    #top .title{
+        font-size: 4rem;
+        /* background-color: aquamarine; */
+    }
+    #top .contact{
+        font-size: x-small;
+    }
+    /* ----------------------- done with top ------------- */
+    #notes{
+        background-color: rgba(0, 8, 8, 0.9);
+        /* background-color: tomato; */
+        padding: 1% 0%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #notes p{
+        font-size: 2rem;
+        animation-name: colorchange ;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: ease-in-out;
+    }
+    @keyframes colorchange{
+        0%{color: rgb(136, 37, 207);}
+        10%{ color: mediumorchid;}
+        20%{ color: mediumslateblue;}
+        30%{ color: fuchsia;}
+        40%{ color: mediumvioletred;}
+        50%{ color: crimson; }
+        60%{ color:  mediumvioletred;}
+        70%{ color: fuchsia;}
+        80%{ color: mediumslateblue;}
+        90%{ color: mediumorchid;}
+        100%{ color: mediumpurple;}
+    }
+    /* --------------- done with notes----- */
+    #blogs{
+        height: 80vh;
+        width: 100%;
+        background-color: rgba(0, 8, 8, 0.9);
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    #blogs .blogz{
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        margin: auto;
+        height: 90%;
+        width: 70%;
+        padding-left: 5%;
+        border: 1px solid rgba(0, 8, 8, 0);
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #blogs .blogz .headline{
+        font-size: 1.5rem;
+        color: white;
+    }
+    #blogs .blogz .para{
+        color: grey;
+        font-size: small;
+    }
+    #blogs .blogz .t{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+    #blogs .blogz .b{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+    }
+    #blogs .blogz:hover .t{
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        transition: all 0.5s ease-in-out;
+    }
+    #blogs .blogz:hover .b{
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: all 0.5s ease-in-out;
+    }
+    /* --------------- done with blogs --------------------- */
+    .footer{
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1% 1%;
+    }
+    .footer p{
+        color: grey;
+        font-size: x-small;
+    }
+    
+
+
+}
