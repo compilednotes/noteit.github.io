@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lets Make Notes</title>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <p>compilednotes.github.io/noteit.github.io/</p>
-        <a href="https://instagram.com/_him.anshu?igshid=YmMyMTA2M2Y=">Instagram</a>
-    </header>
-    <hr>
-    <section id="top">
-        <p class="title">Lets Note it.</p>
-        <p class="discription">Content Available In Proper Order.</p>
-        <p class="contact">Compiled Notes are available here.</p>
-    </section>
-    <section id="notes">
-        <p class="Notes">TOPICS</p>
-    </section>
+    <nav class="navigation">
+        <!-- <p class="logo">LMN</p> -->
+        <p id="letsmakenotes"><span class="logo">L</span>ets <span class="logo">M</span>ake <span class="logo">N</span>otes</p>
+        <p class="link">compilednotes.github.io/noteit.github.io/</p>
+    </nav>
     <section id="blogs">
         <a class="blogz" href="https://powerqualityandfacts.blogspot.com/2022/08/PowerQualityAndFacts.html">
             <p class="headline">Power Quality</p>
@@ -42,9 +35,30 @@
             <div class="b"></div>
         </a>
     </section>
+    <section id="war">
+        <section id="warning">
+            <p>Remaining Notes will be updated soon.</p>
+            <a id="cross">X</a>
+        </section>    
+    </section>
     <footer class="footer">
-        <p class="copy">| © CopyRight | 2021 | All Right Reserved |</p>
-        <p class="dex">| This site is designed and created by Himanshu |</p>
+        <p class="copy">Contact Us at</p>
+        <a class="copy" href="https://instagram.com/_him.anshu?igshid=YmMyMTA2M2Y=">Instagram</a>
+        <p class="dex">| Give Us your valuable suggestions |</p>
+        <p class="copy">| © CopyRight | 2021 | by Lets Make Notes |</p>
+        <p class="dex">| designed and created by Himanshu |</p>
     </footer>
 </body>
+<script>
+    let target = document.getElementById("war");
+
+    let cross = document.getElementById("cross");
+
+
+    function removeIt(){
+        document.getElementById("war").innerHTML = ``;
+    }
+
+    cross.addEventListener("click", removeIt);
+</script>
 </html>
